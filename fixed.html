@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Resend App</title>
+</head>
+<body>
+    <h1>Fixed</h1>
+    <div class="container d-flex justify-content-center flex-column border fixed_card">
+        <form action="" class="d-flex justify-content-center flex-column">
+            <p for="fixed">What are you saving for? *</p>
+            <input type="text" name="fixed" id="" placeholder="Name your saving plan">
+        </form>
+    </div>
+    <div class="container d-flex justify-content-between" id="flexible_btn">
+        <a class="btn_flex" id="btn_1" href="./index.html">Back</a>
+        <a class="btn_flex" id="btn_2" href="./fixed_next.html">Next</a>
+    </div>
+</body>
+</html>
+<style>
+    h1{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 36px;
+        margin-top: 55px;
+    }
+    .fixed_card{
+        border-radius: 8px;
+        margin: 116px auto;
+        box-shadow: 0px 30px 84px rgba(0, 0, 0, 0.25),
+                    0px 8px 32px rgba(0, 0, 0, 0.25), 
+                    0px 3px 14px rgba(0, 0, 0, 0.25), 
+                    0px 1px 3px rgba(0, 0, 0, 0.25);
+        width: 780px;
+        height: 336px;
+        padding-left: 41px;
+    }
+    p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    input{
+        border: 1px solid #C4C4C4;
+        border-radius: 8px;
+        width: 526.4px;
+        height: 65.15px;
+        padding: 22px 7px;
+    }
+    @media screen and (max-width: 768px){
+        .fixed_card{
+            width: 85%;
+            margin: 20px auto;
+            padding-left: 15px;
+        }
+        input{
+            width: 90%; 
+            height: 50px;
+            padding: 8px 5px;
+        }
+        #flexible_btn{
+            width: 80%;
+        }
+    }
+</style>

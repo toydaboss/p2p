@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Resend App</title>
+</head>
+<body>
+    <h1>Flexible</h1>
+    <div class="container d-flex justify-content-center flex-column border" id="card">
+        <form action="" class="form-flexible">
+            <p class="text"> What are you saving for? *</p>
+            <input type="text" name="goal" id="goal" placeholder="Name your goal" class="input" required>
+            <p class="text">How much do you want to save? *</p>
+            <input type="text" name="amount" id="amount" class="input" placeholder="Name your goal" required>
+
+            <p class="text">How do you want to save? *</p>
+            <div class="radio">
+                <input type="radio" name="how" id="daily">
+                <span for="how">Daily</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="how" id="weekly">
+                <span for="how">Weekly</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="how" id="monthly">
+                <span for="how">Monthly</span>
+            </div>
+        </form>
+    </div>
+    <div class="container d-flex" id="flexible_btn">
+        <a class="btn_flex" id="btn_1" href="./index.html">Back</a>
+        <a class="btn_flex" id="btn_2" href="./flexible_next.html">Next</a>
+    </div>
+</body>
+</html>
+
+<style>
+    h1{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 36px;
+        margin-top: 30px;
+    }
+</style>

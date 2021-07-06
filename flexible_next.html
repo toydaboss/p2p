@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Resend App</title>
+</head>
+<body>
+    <h1>Flexible</h1>
+    <div class="container d-flex justify-content-center flex-column border" id="card">
+        <div class="container top">
+            <p class="p_flex">How long are you going to save for?</p>
+            <div class="d-flex main_act justify-content-between py-3 pl">
+                <div class="">
+                    <p style="color: #ADADAD;">Main Accoount</p>
+                    <p>₦ 550,000</p>
+                </div>
+                <div class="">
+                    <small style="font-size: 13px;">you will be debited (Daily)</small>
+                    <p style="padding-top: 16px;">₦ 0.00</p>
+                </div>
+            </div>
+        </div>
+        
+        <form action="">
+            <p class="text"> Start Date</p>
+            <input type="date" name="goal" id="goal" placeholder="Select start date" class="input" required>
+            <p class="text">End Date</p>
+            <input type="date" name="amount" id="amount" class="input" placeholder="Select end date" required>
+        </form>
+    </div>
+    <div class="button d-flex justify-content-center">
+        <a class="btn btn_flex_next" href="#">Launch</a>
+    </div>
+</body>
+</html>
+<style>
+    h1{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 36px;
+        margin-top: 10px;
+    }
+    .p_flex{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .main_act{
+        background: #F8E7F6;
+        border-radius: 8px;
+    }
+    .btn_flex_next{
+        background: rgba(156, 39, 176, 1);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 14px 106px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    #card{
+        padding-left: 96px;
+        padding-right: 98px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .top{
+        margin-top: 55px;
+    }
+    .pl{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 55px;
+    }
+    @media screen and (max-width: 768px){
+        #card{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .pl {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+        .btn_flex_next{
+            padding: 6px 50px;
+        }
+    }
+</style>
